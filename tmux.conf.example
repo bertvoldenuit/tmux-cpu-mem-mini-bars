@@ -1,0 +1,9 @@
+# Example ~/.tmux.conf for tmux-cpu-mem-minibars
+# Replace YOUR_USER; the script path must be absolute.
+
+set -g status on
+set -g status-interval 2
+# Dark background: the green bars would be invisible on tmux's default green bar.
+set -g status-style 'bg=colour235,fg=colour250'
+set -g status-right-length 100
+set -g status-right '#(/home/YOUR_USER/bin/tmux-cpu-mem-minibars.sh) #[default]| %H:%M'
