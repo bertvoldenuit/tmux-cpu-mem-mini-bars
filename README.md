@@ -3,8 +3,12 @@
 CPU and RAM as colored mini-bars on the tmux status line. One small POSIX shell script, no plugin manager, no dependencies.
 
 ```
-CPU █░░░░░░░  13%  RAM ███░░░░░ 5.7/15.6G | 10:39
+CPU █░░░░░░░  32%  RAM ███░░░░░ 11.9/23.4G | 21:09
 ```
+
+<img width="1792" height="1276" alt="image" src="https://github.com/user-attachments/assets/f4d23322-f295-4ec5-b13d-0d4823d3de07" />
+
+
 
 - **CPU** is the usage *since the previous refresh* (read from `/proc/stat`), not the average since boot.
 - **RAM** is `MemTotal - MemAvailable`, the same figure `free -h` and `htop` show as "used" (disk cache not counted), as used/total in GiB.
